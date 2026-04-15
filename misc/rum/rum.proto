@@ -1,0 +1,65 @@
+syntax = "proto3";
+
+package rumrpc;
+option go_package = "app/main/rumrpc";
+
+message ISequence {
+  string name = 1;
+  string service = 2;
+  int32 rank = 3;
+  bytes input = 4;
+}
+
+message IPost {
+  ISequence profile = 1;
+  bool push = 3;
+};
+
+message IDelete {
+  ISequence profile = 1;
+  bool remove = 3;
+};
+
+message IDeactivate {
+  ISequence profile = 1;
+  bool deactive = 3;
+};
+
+message IActivate {
+  ISequence profile = 1;
+  bool activate = 3;
+};
+
+message IPostRequest { repeated IPost post = 1; };
+message IDeleteRequest { repeated IDelete delete = 1; }
+message IDeactivateRequest { repeated IDeactivate deactivate = 1; }
+message IActivateRequest { repeated IActivate activate = 1; }
+message IRemoveServiceRequest { repeated IDelete delete = 1; }
+message IDeactivateServiceRequest { repeated IDelete delete = 1; }
+message IActivateServiceRequest { repeated IDelete delete = 1; }
+message IPostResponse { bool succeed = 1; };
+message IDeleteResponse { bool succeed = 2; };
+message IActivateResponse { bool succeed = 2; };
+message IDeactivateResponse { bool succeed = 2; };
+message IRemoveServiceResponse { bool succeed = 2; };
+message IDeactivateServiceResponse { bool succeed = 2; };
+message IActivateServiceResponse { bool succeed = 2; };
+
+service OnRumService {
+
+  rpc POST(IPostRequest) returns (IPostResponse);
+
+  rpc DELETE(IDeleteRequest) returns (IDeleteResponse);
+
+  rpc ACTIVATE(IActivateRequest) returns (IActivateResponse);
+
+  rpc DEACTIVATE(IDeactivateRequest) returns (IDeactivateResponse);
+
+  rpc REMOVESERVICE(IRemoveServiceRequest) returns (IRemoveServiceResponse);
+
+  rpc DEACTIVATESERVICE(IDeactivateServiceRequest)
+      returns (IDeactivateServiceResponse);
+
+  rpc ACTIVATESERVICE(IActivateServiceRequest)
+      returns (IActivateServiceResponse);
+}
