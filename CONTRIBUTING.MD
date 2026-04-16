@@ -56,8 +56,12 @@ Search-Manager:
 
 
 
-
+<div>
 `Quick start:`
+<br>
 1.Config the minIO user & pass in the compose.yml.
+<br>
 2.Run the play.bat
+<br>
 3.you'll see how the registered func actually works
+</div>
