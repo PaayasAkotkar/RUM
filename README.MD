@@ -24,8 +24,9 @@ The next thing was to figure out the search engine to allow the user to freely u
 <div align="center"><b>Structure</b></div>
 
 The idea is kept simple — monitor the attributes and allow a robust hierarchy to manage the models or agents. To make things simple gRPC was introduced so that calls can be made from anywhere to support one single server. With this setup the headache of creating many servers to support different agents or models has been solved and you achieve a simple reusable handler for those models.
-<p>
-The hierarchy is:
+
+<p align="center">
+<b>The hierarchy:</b>
 <br>
 Rum[In, Out]
 <br>
