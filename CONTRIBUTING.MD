@@ -1,12 +1,12 @@
 ## Contributing to  RUM 😄
 
-Hey there!!! Welcome!! Thanks for considering to contribute to the RUM. Rum is created on the ideology to manage many models and keep the structure simple than complex. I built idea upon how I viewed the RAG system and how I can make it resuable and control the client's call through registered func.
+Hey there!!! Welcome!! Thanks for considering to contribute to the RUM (Run Your Models). RUM is created on the ideology to manage many models and keep the structure simple than complex. I built idea upon how I viewed the RAG system and how I can make it resuable and control the client's call through registered func.
 
 
 
 ## Status 💡
 
-Rum/Server:
+RUM/Server:
 - **Budget.go:**
                   - implements the budget management.
 - **Cluster.go:**
@@ -29,9 +29,9 @@ Rum/Server:
                   - core of the idea that stores the created profiles and modficaiton.
 - **register:**
                   - generic function that handle the services to be trigger and pass the result as per the func implemetaiton.
-- **rum.go:**
+- **RUM.go:**
                   - base of the idea that uses all the structs and implements the logic.
-- **rumio.go:**
+- **RUMio.go:**
                   - provides writer that writes the result and triggers the events.
 - **sequence.go:**:
                   - a simple struct to handle the profile management.
@@ -43,7 +43,7 @@ Rum/Server:
                   - implements the search-engine and profile storage.
 - **time-format.go:**
                   - implements the description of the events & profile management.
-Rum/client:
+RUM/client:
 - **client.go:**
                   - implements the client that calls the server.
 
