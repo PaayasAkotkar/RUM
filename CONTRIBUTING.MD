@@ -30,7 +30,7 @@ Hey there!!! Welcome!! Thanks for considering to contribute to the RUM (Run Your
 
 ---
 
-### <img src="image/paint.png"alt="paint" width="60"></img> 
+### <img src="image/paint.png" alt="paint" width="60"></img> 
 **Core:** Uses `lipgloss` package to bring creative artwork on the terminal.
 
 * **main.go:** Implements the motivation, flow & guide.
