@@ -55,7 +55,6 @@ Search-Manager:
                   - main entry point of the search engine.
 
 
-
 <div>
 <b>Quick start:</b>
 <br>

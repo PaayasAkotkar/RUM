@@ -78,7 +78,7 @@ POST() → write() — runs all the active registered funcs as per the rankings 
 <br>
 ↓
 <br>
-Light.Publish() — internal pubsub (nanoseconds)
+Chakra — internal pubsub (nanoseconds)
 <br>
 ↓
 <br>
@@ -106,6 +106,15 @@ Server owns the result
 | Embedder | Upcoming | One single embedder for all models |
 | Cluster | Upcoming | One Cluster to scale the service |
 |ServerRUM|Upcoming| Reduce complexity for server->client communication |
+
+
+## New 😎
+| Feature | Version | Desc |
+|---|---|---|
+| RUM | v1 | can now monitor the func performance |
+| Dog | v1 | monitors the func performance  |
+| Chakra | v1 | internal pub-sub system |
+|Paint | v1| css-alike style sheet for terminal |
 <div align="center">
 <footer>@copyright 2026; created with imagination and coded with passion ✏️</footer>
 </div>
